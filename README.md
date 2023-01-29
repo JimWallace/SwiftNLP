@@ -1,3 +1,3 @@
-# SwiftNLP
+# Swift NLP
 
 Hello, World! 
