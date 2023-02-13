@@ -21,14 +21,6 @@ let parameters: [String: String] = [
     "grant_type": "client_credentials"
 ]
 
-struct RedditAuthResponse: Decodable
-{
-    let access_token: String
-    let token_type: String
-    let expires_in: Int
-    let scope: String
-}
-
 AF.request("https://www.reddit.com/api/v1/access_token", method: .post, parameters: parameters, headers: headers)
     .authenticate(username: client_id, password: client_secret)
     .responseDecodable(of: RedditAuthResponse.self) { response in
