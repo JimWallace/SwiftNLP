@@ -11,6 +11,7 @@
 		38B3281C29B18B600070E45C /* SwiftNLP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B3281129B18B600070E45C /* SwiftNLP.framework */; };
 		38B3282129B18B600070E45C /* SwiftNLPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B3282029B18B600070E45C /* SwiftNLPTests.swift */; };
 		38B3282229B18B600070E45C /* SwiftNLP.h in Headers */ = {isa = PBXBuildFile; fileRef = 38B3281429B18B600070E45C /* SwiftNLP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38B3282C29B18D110070E45C /* preprocessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B3282B29B18D110070E45C /* preprocessing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		38B3281529B18B600070E45C /* SwiftNLP.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SwiftNLP.docc; sourceTree = "<group>"; };
 		38B3281B29B18B600070E45C /* SwiftNLPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftNLPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38B3282029B18B600070E45C /* SwiftNLPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftNLPTests.swift; sourceTree = "<group>"; };
+		38B3282B29B18D110070E45C /* preprocessing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = preprocessing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				38B3281429B18B600070E45C /* SwiftNLP.h */,
 				38B3281529B18B600070E45C /* SwiftNLP.docc */,
+				38B3282D29B18D1A0070E45C /* parsing */,
 			);
 			path = SwiftNLP;
 			sourceTree = "<group>";
@@ -83,6 +86,14 @@
 				38B3282029B18B600070E45C /* SwiftNLPTests.swift */,
 			);
 			path = SwiftNLPTests;
+			sourceTree = "<group>";
+		};
+		38B3282D29B18D1A0070E45C /* parsing */ = {
+			isa = PBXGroup;
+			children = (
+				38B3282B29B18D110070E45C /* preprocessing.swift */,
+			);
+			path = parsing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38B3282C29B18D110070E45C /* preprocessing.swift in Sources */,
 				38B3281629B18B600070E45C /* SwiftNLP.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,6 +405,7 @@
 		38B3282929B18B600070E45C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -407,6 +420,7 @@
 		38B3282A29B18B600070E45C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
